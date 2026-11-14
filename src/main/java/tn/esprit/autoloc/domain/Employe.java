@@ -36,8 +36,7 @@ public class Employe {
     @NotNull
     private RoleEmploye role;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "id_agence", nullable = false)
-    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_agence")
     private Agence agence;
 }
